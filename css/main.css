@@ -1,0 +1,113 @@
+﻿@font-face {
+    font-family: 'Toyz';
+    src: url(/fonts/toyz.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#reg {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #bfbfbd;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+#dog-head {
+    position: absolute;
+    left: 85px;
+    top: 5px;
+}
+
+body {
+    background: #383836;
+    color: #bfbfbd;
+    text-decoration: none;
+    font-family: 'Toyz';
+}
+
+#header {
+    background-image: url('images/header3.jpeg');
+    color: #bfbfbd;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-bottom: 2px solid #bfbfbd;
+    float: left;
+}
+
+#footer {
+    background-image: url('images/header3.jpeg');
+    color: #bfbfbd;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-top: 2px solid #bfbfbd;
+    float: left;
+
+}
+
+#aside {
+    height: 150vh;
+    width: 20%;
+    border-right: 2px solid #bfbfbd;
+    float: left;
+    background: #383836;
+}
+
+#main {
+    height: 140vh;
+    width: 70%;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+    background: #383836;
+    color: #bfbfbd;
+}
+
+#nav li {
+    display: block;
+    background: #bfbfbd;
+    color: #383836;
+    border: 2px solid #bfbfbd;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#nav li:hover {
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+
+#reg:hover {
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+
+a:link {
+    text-decoration: none;
+    color: #383836;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #383836;
+}
+
+a:active {
+    text-decoration: none;
+    color: #383836;
+} 
