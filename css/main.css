@@ -1,4 +1,5 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+﻿/*Общие предусловия*/
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
 
 @font-face {
     font-family: 'Underdog', cursive;
@@ -10,6 +11,28 @@
     font-family: 'Underdog', cursive;
 }
 
+body {
+    background: #383836;
+    color: #bfbfbd;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: #383836;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #383836;
+}
+
+a:active {
+    text-decoration: none;
+    color: #383836;
+}
+
+/*Кнопка "Войти\Регистрация и её анимация*/
 #reg {
     width: 200px;
     height: 30px;
@@ -25,24 +48,24 @@
     Font-weight: bolder;
 }
 
+#reg:hover {
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+
+/*Шапка сайта*/
 #dog-head {
     position: absolute;
     left: 85px;
     top: 5px;
 }
 
-body {
-    background: #383836;
-    color: #bfbfbd;
-    text-decoration: none;
-    font-family: 'Toyz';
-}
-
 #header {
     background-image: url('images/header3.jpeg');
     color: #bfbfbd;
     width: 100%;
-    height: 70px;
+    height: 30%;
     text-align: center;
     line-height: 70px;
     border-bottom: 2px solid #bfbfbd;
@@ -50,6 +73,7 @@ body {
     font-size: 24px;
 }
 
+/*Футер*/
 #footer {
     background-image: url('images/header3.jpeg');
     color: #bfbfbd;
@@ -62,22 +86,23 @@ body {
 
 }
 
-#aside {
-    height: 150vh;
-    width: 20%;
-    border-right: 2px solid #bfbfbd;
-    float: left;
-    background: #383836;
-}
-
+/*Центральная часть (справа)*/
 #main {
-    height: 140vh;
     width: 70%;
+    height: 1100px;
     padding-left: 20px;
     padding-top: 10px;
     float: left;
     background: #383836;
     color: #bfbfbd;
+    border-left: 2px solid #bfbfbd;
+}
+
+/*Левая часть сайта*/
+#aside {
+    width: 20%;
+    float: left;
+    background: #383836;
 }
 
 #nav li {
@@ -87,8 +112,9 @@ body {
     border: 2px solid #bfbfbd;
     margin: 15px;
     padding: 5px;
-    text-align: center;
     border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
     font-size: 16px;
     Text-transform: uppercase;
     Font-weight: bolder;
@@ -100,23 +126,14 @@ body {
     cursor: pointer;
  }
 
-#reg:hover {
-    background: white;
-    border-radius: 10px;
-    cursor: pointer;
- }
-
-a:link {
-    text-decoration: none;
-    color: #383836;
+.lap-icon1 {
+    height: 30px;
+    width: 30px;
+    transform: translate(0%, 20%);
 }
 
-a:visited {
-    text-decoration: none;
-    color: #383836;
+.lap-icon2 {
+    height: 30px;
+    width: 30px;
+    transform: translate(0%, 20%);
 }
-
-a:active {
-    text-decoration: none;
-    color: #383836;
-} 
