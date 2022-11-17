@@ -1,11 +1,13 @@
-﻿@font-face {
-    font-family: 'toyz';
-    src: url(/fonts/toyz.ttf);
+﻿@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+@font-face {
+    font-family: 'Underdog', cursive;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Underdog', cursive;
 }
 
 #reg {
@@ -18,6 +20,9 @@
     right: 15px;
     top: 15px;
     border-radius: 5px;
+    font-size: 16px;
+    Text-transform: uppercase;
+    Font-weight: bolder;
 }
 
 #dog-head {
@@ -42,6 +47,7 @@ body {
     line-height: 70px;
     border-bottom: 2px solid #bfbfbd;
     float: left;
+    font-size: 24px;
 }
 
 #footer {
@@ -83,6 +89,9 @@ body {
     padding: 5px;
     text-align: center;
     border-radius: 5px;
+    font-size: 16px;
+    Text-transform: uppercase;
+    Font-weight: bolder;
 }
 
 #nav li:hover {
