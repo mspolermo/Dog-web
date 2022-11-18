@@ -1,3 +1,4 @@
 ﻿function registrationAlert() {
-    alert('Функция еще не реализована')
+    alert('Функция входа еще не реализована')
+    window.location = "register.html";
 }
