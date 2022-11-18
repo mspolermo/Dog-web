@@ -13,7 +13,7 @@
         Войти\Регистрация
     </div>
     <div id="dog-head">
-        <img Width="12%" Height="12%" src="css/images/dog-head.png">
+        <img Width="12%" Height="12%" src="css/images/register-head.png">
     </div>
     <div id="header">
         <h1>Сайт собаки по имени Лоч</h1>
@@ -33,26 +33,33 @@
     <div id="main">
         <h1>Регистрация</h1>
         </br>
-        <p>Приступим к регистрации</p>
+        <p>Заполни эту форму чтобы стать моим другом! Гав!</p>
         </br>
-        <form>
-            <label for="email">Введите ваш почтовый адрес</label>
-            <input name="email" type="email" />
-            </br>
-            <label for="user_name">Введите ваше имя</label>
+        <form method="post">
+            <label for="user_name">Как тебя зовут?</label>
             <input name="user_name" type="text" />
             </br>
-            <span>Ваш пол:</span>
+            </br>
+            <label for="email">Введи твой почтовый адрес:</label>
+            <input name="email" type="email" />
+            </br>
+            </br>
+            <span>Твой пол:</span>
             <input name="pol" type="radio" />
             <span>Мужской</span>
             <input name="pol" type="radio" />
             <span>Женский</span>
             </br>
-            <label for="user_pass">Введите ваш пароль</label>
+            </br>
+            <label for="user_pass">Придумай пароль:</label>
             <input name="user_pass" type="password" />
             </br>
-            <label for="user_repass">Повторите пароль</label>
+            </br>
+            <label for="user_repass">Повтори пароль:</label>
             <input name="user_repass" type="password" />
+            </br>
+            </br>
+            <input name="submitButton" type="submit" value="Подтвердить" />
 
         </form>
     </div>
