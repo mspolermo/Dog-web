@@ -41,7 +41,7 @@ a:active {
     Text-transform: uppercase;
     Font-weight: bolder;
 }
-#reg:hover {
+    #reg:hover {
     background: white;
     border-radius: 10px;
     cursor: pointer;
@@ -110,7 +110,7 @@ a:active {
     Text-transform: uppercase;
     Font-weight: bolder;
 }
-#nav li:hover {
+    #nav li:hover {
     background: white;
     border-radius: 10px;
     cursor: pointer;
@@ -124,4 +124,69 @@ a:active {
     height: 30px;
     width: 30px;
     transform: translate(0%, 20%);
+}
+
+/*Поп-ап*/
+.pop_up /*Создаем затемнение*/ {
+width: 100%;
+height: 100%;
+position:fixed;
+left: 0;
+top: 0;
+background-color:rgba(0, 0, 0, 0.8);
+z-index:2;
+}
+.pop_up_container /*Сам поп-ап выравниваем по центру экрана*/ {
+    display: flex; /*центровка по центру*/
+    width: 100%;
+    height: 100%;
+}
+.pop_up_body /*Тело поп-апа*/{
+    margin: auto;
+    width: 400px;
+    background-image: url('images/header3.jpeg');
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 110px 15px;
+    position: relative;
+}
+    .pop_up_body h2 {
+        font-size: 32px;
+        color: #bfbfbd;
+    }
+    .pop_up_body p {
+        color: #bfbfbd;
+    }
+    .pop_up_body input {
+        display: block;
+        margin: 25px auto 0px auto;
+        width: 330px;
+        padding: 17px 20px;
+        background-color: #bfbfbd;
+        border-radius: 10px;
+        border: none;
+        color: #383836;
+        font-size: 18px;
+    }
+        .pop_up_body input:focus /*убиранем выделение полей по нажатию*/{
+            outline:none;
+        }
+    .pop_up_body button {
+        cursor: pointer;
+        display: block;
+        width: 280px;
+        margin: 60px auto 0px auto;
+        padding: 20px 0px;
+        font-size: 20px;
+        border: solid 2px #bfbfbd;
+        color: #bfbfbd;
+        border-radius: 10px;
+        background-color: #383836;
+    }
+.pop_up_close /*Кнопка закрыть*/{
+position: absolute;
+top: 15px;
+right: 15px;
+font-size: 24px;
+cursor: pointer;
 }
