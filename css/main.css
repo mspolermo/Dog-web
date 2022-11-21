@@ -128,6 +128,7 @@ a:active {
 
 /*Поп-ап*/
 .pop_up /*Создаем затемнение*/ {
+display: none; /*В неактивированном по JS состоянии (по-умолчанию) объект будет скрыт*/
 width: 100%;
 height: 100%;
 position:fixed;
@@ -136,6 +137,9 @@ top: 0;
 background-color:rgba(0, 0, 0, 0.8);
 z-index:2;
 }
+    .pop_up.active { /*Поп-ап отображается. Класс активации для JS*/
+        display: block;
+    }
 .pop_up_container /*Сам поп-ап выравниваем по центру экрана*/ {
     display: flex; /*центровка по центру*/
     width: 100%;
@@ -171,18 +175,18 @@ z-index:2;
         .pop_up_body input:focus /*убиранем выделение полей по нажатию*/{
             outline:none;
         }
-    .pop_up_body button {
-        cursor: pointer;
-        display: block;
-        width: 280px;
-        margin: 60px auto 0px auto;
-        padding: 20px 0px;
-        font-size: 20px;
-        border: solid 2px #bfbfbd;
-        color: #bfbfbd;
-        border-radius: 10px;
-        background-color: #383836;
-    }
+.pop_up_button {
+    cursor: pointer;
+    display: block;
+    width: 280px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-size: 20px;
+    border: solid 2px #bfbfbd;
+    color: #bfbfbd;
+    border-radius: 10px;
+    background-color: #383836;
+}
 .pop_up_close /*Кнопка закрыть*/{
 position: absolute;
 top: 15px;

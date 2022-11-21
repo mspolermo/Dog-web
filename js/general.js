@@ -1,7 +1,12 @@
 ﻿/*Функция уведомления что нереализации входа*/
 function registrationAlert() {
-    alert('Функция входа еще не реализована')
+    alert('Функция входа еще не реализована');
     window.location = "register.html";
+}
+
+function reDirectToRegister() {
+    window.location = "register.html";
+    return
 }
 
 /*Функция распознавания введённых в формы данных*/

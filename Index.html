@@ -17,7 +17,7 @@
     <div id="header">
         <h1>Сайт собаки по имени Лоч</h1>
     </div>
-    <div id="reg" onclick="registrationAlert()">
+    <div id="reg">
         Войти\Регистрация
     </div>
 
@@ -64,23 +64,25 @@
     </div>
 
     <!-- Поп-ап контейнер-->
-    <div class="pop_up">
+    <div class="pop_up" id="pop_up">
         <div class="pop_up_container">
-             <div class="pop_up_body">
-                 <h2>Войти к Лочику на сайт</h2>
-                 <p>(осторожно, пёс будет лаять)</p>
-                 <form action="">
-                     <input type="email" placeholder="Почта" />
-                     <input type="password" placeholder="Пароль" />
-                     </br>
-                     <button>Захожу!</button>
-                 </form>
-                 <div class="pop_up_close">&#10006</div>
-             </div>
+            <div class="pop_up_body">
+                <h2>Войти к Лочику на сайт</h2>
+                <p>(осторожно, пёс будет лаять)</p>
+                <form action="" method="post">
+                    <input type="email" placeholder="Почта" />
+                    <input type="password" placeholder="Пароль" />
+                    </br>
+                    <div class="pop_up_button" onclick="registrationAlert()">Захожу!</div>
+                    <div class="pop_up_button" onclick="reDirectToRegister()">Регистрация</div>
+                </form>
+                <div class="pop_up_close" id="pop_up_close">&#10006</div>
+            </div>
         </div>
     </div>
 
 
     <script src="js/general.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 </html>
