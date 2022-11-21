@@ -35,7 +35,7 @@
         </br>
         <p>Заполни эту форму чтобы стать моим другом! Гав!</p>
         </br>
-        <form method="post">
+        <form onsubmit="return registerForm(this)" method="post">
             <label for="user_name">Как тебя зовут?</label>
             <input name="user_name" type="text" />
             </br>
@@ -45,10 +45,10 @@
             </br>
             </br>
             <span>Твой пол:</span>
-            <input name="pol" type="radio" />
-            <span>Мужской</span>
-            <input name="pol" type="radio" />
-            <span>Женский</span>
+            <input name="pol" type="radio" id="male" value="Мужской" />
+            <label for="male">Мужской</label>
+            <input name="pol" type="radio" id="female" value="Женский" />
+            <label for="female">Женский</label>
             </br>
             </br>
             <label for="user_pass">Придумай пароль:</label>
@@ -59,6 +59,7 @@
             <input name="user_repass" type="password" />
             </br>
             </br>
+            <span id="error"></span>
             <input name="submitButton" type="submit" value="Подтвердить" />
 
         </form>
