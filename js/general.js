@@ -1,8 +1,10 @@
-﻿function registrationAlert() {
+﻿/*Функция уведомления что нереализации входа*/
+function registrationAlert() {
     alert('Функция входа еще не реализована')
     window.location = "register.html";
 }
 
+/*Функция распознавания введённых в формы данных*/
 function registerForm(el) {
     var userName = el.user_name.value;
     var email = el.email.value;

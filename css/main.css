@@ -1,32 +1,26 @@
 ﻿/*Общие предусловия*/
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
-
 @font-face {
     font-family: 'Underdog', cursive;
 }
-
 * {
     margin: 0;
     padding: 0;
     font-family: 'Underdog', cursive;
 }
-
 body {
     background: #383836;
     color: #bfbfbd;
     text-decoration: none;
 }
-
 a:link {
     text-decoration: none;
     color: #383836;
 }
-
 a:visited {
     text-decoration: none;
     color: #383836;
 }
-
 a:active {
     text-decoration: none;
     color: #383836;
@@ -47,7 +41,6 @@ a:active {
     Text-transform: uppercase;
     Font-weight: bolder;
 }
-
 #reg:hover {
     background: white;
     border-radius: 10px;
@@ -60,7 +53,6 @@ a:active {
     left: 85px;
     top: 5px;
 }
-
 #header {
     background-image: url('images/header3.jpeg');
     color: #bfbfbd;
@@ -86,7 +78,7 @@ a:active {
 
 }
 
-/*Центральная часть (справа)*/
+/*Центральная часть сайта(справа)*/
 #main {
     width: 70%;
     height: 1100px;
@@ -104,7 +96,6 @@ a:active {
     float: left;
     background: #383836;
 }
-
 #nav li {
     display: block;
     background: #bfbfbd;
@@ -119,19 +110,16 @@ a:active {
     Text-transform: uppercase;
     Font-weight: bolder;
 }
-
 #nav li:hover {
     background: white;
     border-radius: 10px;
     cursor: pointer;
  }
-
 .lap-icon1 {
     height: 30px;
     width: 30px;
     transform: translate(0%, 20%);
 }
-
 .lap-icon2 {
     height: 30px;
     width: 30px;
