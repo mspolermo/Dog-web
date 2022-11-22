@@ -163,7 +163,7 @@ z-index:2;
     }
     .pop_up_body input {
         display: block;
-        margin: 25px auto 0px auto;
+        margin: 20px auto 0px auto;
         width: 330px;
         padding: 17px 20px;
         background-color: #bfbfbd;
@@ -175,7 +175,7 @@ z-index:2;
         .pop_up_body input:focus /*убиранем выделение полей по нажатию*/{
             outline:none;
         }
-.pop_up_button {
+#pop_up_button_enter {
     cursor: pointer;
     display: block;
     width: 280px;
@@ -187,10 +187,22 @@ z-index:2;
     border-radius: 10px;
     background-color: #383836;
 }
-.pop_up_close /*Кнопка закрыть*/{
-position: absolute;
-top: 15px;
-right: 15px;
-font-size: 24px;
-cursor: pointer;
+#pop_up_button_reg {
+    cursor: pointer;
+    display: block;
+    width: 280px;
+    margin: 20px auto 0px auto;
+    padding: 20px 0px;
+    font-size: 20px;
+    border: solid 2px #bfbfbd;
+    color: #bfbfbd;
+    border-radius: 10px;
+    background-color: #383836;
+}
+.pop_up_close /*Кнопка закрыть*/ {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
 }
