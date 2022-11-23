@@ -4,6 +4,7 @@ function registrationAlert() {
     window.location = "register.html";
 }
 
+/*Функция редиректа на страницу регистрации*/
 function reDirectToRegister() {
     window.location = "register.html";
     return
@@ -37,12 +38,12 @@ function registerForm(el) {
     }
     else {
         if (pol == "Мужской") {
-            alert("Привет, " + userName + "! Теперь ты мой друг! Я отправлю тебе подтверждение нашей дружбы на твою почту - "
+            alert("Привет, " + userName + "! Теперь ты мой друг! Скоро я отправлю тебе подтверждение нашей дружбы на твою почту - "
                 + email + ". Хорошего дня!");
             return true;
         }
         else {
-            alert("Привет, " + userName + "! Теперь ты моя подруга! Я отправлю тебе подтверждение нашей дружбы на твою почту - "
+            alert("Привет, " + userName + "! Теперь ты моя подруга! Скоро я отправлю тебе подтверждение нашей дружбы на твою почту - "
                 + email + ". Хорошего дня!");
             return true;
         }

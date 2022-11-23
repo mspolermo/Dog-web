@@ -128,17 +128,19 @@ a:active {
 
 /*Поп-ап*/
 .pop_up /*Создаем затемнение*/ {
-display: none; /*В неактивированном по JS состоянии (по-умолчанию) объект будет скрыт*/
 width: 100%;
 height: 100%;
 position:fixed;
 left: 0;
 top: 0;
-background-color:rgba(0, 0, 0, 0.8);
+background-color:transparent; /*Плавное изменение цвета*/
 z-index:2;
+transform: translate(44.5%, -45%) scale(0%); /*Появляется на весь экран из нопки*/
+transition: .4s ease-in-out; /*Анимация разворота*/
 }
     .pop_up.active { /*Поп-ап отображается. Класс активации для JS*/
-        display: block;
+        transform: translate(0%, 0%) scale(100%); /*Сворачивается обратно в кнопку*/
+        background-color: rgba(0, 0, 0, 0.8); /*Затемнение вокруг попапа*/
     }
 .pop_up_container /*Сам поп-ап выравниваем по центру экрана*/ {
     display: flex; /*центровка по центру*/
@@ -151,7 +153,7 @@ z-index:2;
     background-image: url('images/header3.jpeg');
     border-radius: 10px;
     text-align: center;
-    padding: 100px 15px 110px 15px;
+    padding: 40px 15px 30px 15px;
     position: relative;
 }
     .pop_up_body h2 {
@@ -175,7 +177,7 @@ z-index:2;
         .pop_up_body input:focus /*убиранем выделение полей по нажатию*/{
             outline:none;
         }
-#pop_up_button_enter {
+#pop_up_button_enter /*Кнопка Захожу*/ {
     cursor: pointer;
     display: block;
     width: 280px;
@@ -187,7 +189,7 @@ z-index:2;
     border-radius: 10px;
     background-color: #383836;
 }
-#pop_up_button_reg {
+#pop_up_button_reg /*Кнопка Подружиться*/ {
     cursor: pointer;
     display: block;
     width: 280px;
