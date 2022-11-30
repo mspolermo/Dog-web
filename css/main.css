@@ -220,3 +220,6 @@ transition: .4s ease-in-out; /*Анимация разворота*/
 .hidden {
     display: none;
 }
+.controls {
+    margin-top: 10px;
+}
