@@ -51,6 +51,10 @@ function registerForm(el) {
 
 }
 
+/*Функция скрытия-открытия меню по кнопке*/
+function openMenu() {
+    document.getElementById('sidebar').classList.toggle('hidden');
+}
 
 /*Слайдер для иконки в верхнем углу*/
 const sliderHead = document.querySelector('#sliderHead'); /*присваиваем к константе div с id=sliderHead*/
