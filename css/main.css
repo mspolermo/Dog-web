@@ -9,17 +9,17 @@
     font-family: 'Underdog', cursive;
 }
 body {
-    background: #383836;
+    background: #373737;
     color: #bfbfbd;
     text-decoration: none;
 }
 a:link {
     text-decoration: none;
-    color: #383836;
+    color: #373737;
 }
 a:visited {
     text-decoration: none;
-    color: #383836;
+    color: #373737;
 }
 a:active {
     text-decoration: none;
@@ -48,11 +48,17 @@ a:active {
  }
 
 /*Шапка сайта*/
-#dog-head {
+#sliderHead {
     position: absolute;
-    left: 85px;
+    left: 80px;
     top: 5px;
+    width: 60px;
+    height: 60px;
 }
+.hiddenHead {
+    display: none;
+}
+
 #header {
     background-image: url('images/header3.jpeg');
     color: #bfbfbd;
@@ -85,7 +91,7 @@ a:active {
     padding-left: 20px;
     padding-top: 10px;
     float: left;
-    background: #383836;
+    background: #373737;
     color: #bfbfbd;
     border-left: 2px solid #bfbfbd;
 }
@@ -94,12 +100,12 @@ a:active {
 #aside {
     width: 20%;
     float: left;
-    background: #383836;
+    background: #373737;
 }
 #nav li {
     display: block;
     background: #bfbfbd;
-    color: #383836;
+    color: #373737;
     border: 2px solid #bfbfbd;
     margin: 15px;
     padding: 5px;
@@ -171,7 +177,7 @@ transition: .4s ease-in-out; /*Анимация разворота*/
         background-color: #bfbfbd;
         border-radius: 10px;
         border: none;
-        color: #383836;
+        color: #373737;
         font-size: 18px;
     }
         .pop_up_body input:focus /*убиранем выделение полей по нажатию*/{
@@ -187,7 +193,7 @@ transition: .4s ease-in-out; /*Анимация разворота*/
     border: solid 2px #bfbfbd;
     color: #bfbfbd;
     border-radius: 10px;
-    background-color: #383836;
+    background-color: #373737;
 }
 #pop_up_button_reg /*Кнопка Подружиться*/ {
     cursor: pointer;
@@ -199,7 +205,7 @@ transition: .4s ease-in-out; /*Анимация разворота*/
     border: solid 2px #bfbfbd;
     color: #bfbfbd;
     border-radius: 10px;
-    background-color: #383836;
+    background-color: #373737;
 }
 .pop_up_close /*Кнопка закрыть*/ {
     position: absolute;
@@ -215,7 +221,7 @@ transition: .4s ease-in-out; /*Анимация разворота*/
     margin-right: auto;
     width: 300px;
     height: 400px;
-    background-color: #383836;
+    background-color: #373737;
 }
 .hidden {
     display: none;

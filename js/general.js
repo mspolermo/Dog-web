@@ -50,3 +50,40 @@ function registerForm(el) {
     }
 
 }
+
+
+/*Слайдер для иконки в верхнем углу*/
+const sliderHead = document.querySelector('#sliderHead'); /*присваиваем к константе div с id=sliderHead*/
+const sliderHeadItems = Array.from(sliderHead.children); /* записываем в константу детей div sliderHead (там фотки), формат данных будет - HTML collection
+HTML collection - массивоподобная структура, через Array.from() преобразуем его в массив*/
+sliderHeadItems.forEach(function (slideHead, indexHead) { /*объявляем функцию для каждого элемента массива*/
+    /*Скрываем все слайды кроме первого*/
+    if (indexHead != 0) {
+        slideHead.classList.add('hiddenHead') /*добавляем css класс ко слайдам кроме первого, чтобы скрыть их*/
+    }
+    /*Добавляем дата-индексы для слайдов (они в строчном формате выводяться если что, не в числовом)*/
+    slideHead.dataset.index = indexHead;
+    /*Добавляем data-атрибут active для первого\активного слайда*/
+    sliderHeadItems[0].setAttribute('dataHead-active', '');
+
+
+    /*Реализация клика по слайдам*/
+    slideHead.addEventListener('click', function () { /*Остлеживаем клик по слайду, после него выполняем функцию*/
+
+        slideHead.classList.add('hiddenHead'); /*скрываем текущий слайд*/
+        slideHead.removeAttribute('dataHead-active'); /*удаляем атрибут активного слайда*/
+
+        /*Рассчитываем индекс следующего слайда. Если следующего не существует, то начинаем заново*/
+        let nextSlideHeadIndex;
+        if (indexHead + 1 === sliderHeadItems.length) {
+            nextSlideHeadIndex = 0;
+        } else {
+            nextSlideHeadIndex = indexHead + 1;
+        }
+
+        const nextSlideHead = sliderHead.querySelector(`[data-index="${nextSlideHeadIndex}"]`); /*Ищем следущий слайд на странице*/
+
+        nextSlideHead.classList.remove('hiddenHead'); /*Отображаем следующий слайд*/
+        nextSlideHead.setAttribute('dataHead-active', ''); /*устанавливаем атрибут активного слайда*/
+    })
+});
