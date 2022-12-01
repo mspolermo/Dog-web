@@ -57,6 +57,7 @@ function openMenu() {
 }
 
 /*Слайдер для иконки в верхнем углу*/
+{
 const sliderHead = document.querySelector('#sliderHead'); /*присваиваем к константе div с id=sliderHead*/
 const sliderHeadItems = Array.from(sliderHead.children); /* записываем в константу детей div sliderHead (там фотки), формат данных будет - HTML collection
 HTML collection - массивоподобная структура, через Array.from() преобразуем его в массив*/
@@ -91,3 +92,4 @@ sliderHeadItems.forEach(function (slideHead, indexHead) { /*объявляем �
         nextSlideHead.setAttribute('dataHead-active', ''); /*устанавливаем атрибут активного слайда*/
     })
 });
+}
