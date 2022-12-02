@@ -45,7 +45,7 @@ a:active {
     top: 10px;
     background: #bfbfbd;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 8px;
     cursor: pointer;
 }
     .toggle-btn span {
@@ -56,11 +56,9 @@ a:active {
         margin: 4px 0;
     }
     .toggle-btn:hover {
-        background: #373737
+        background: white;
+        border-radius: 10px;
     }
-        .toggle-btn:hover span {
-            background: #bfbfbd
-        }
     /*Иконка-слайдер*/
 #sliderHead {
     position: absolute;
@@ -82,13 +80,14 @@ a:active {
     position: absolute;
     right: 15px;
     top: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 16px;
     Text-transform: uppercase;
     Font-weight: bolder;
 }
     #reg:hover {
-    background: white;
+        background: white;
+        color: #373737;
     border-radius: 10px;
     cursor: pointer;
  }
@@ -115,8 +114,32 @@ a:active {
     display: none;
 }
 .controls {
-    margin-top: 10px;
+    margin-top: 15px;
 }
+.buttonSlider {
+    padding: 15px;
+    background: #bfbfbd;
+    color: #373737;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    Font-weight: bolder;
+    Text-transform: uppercase;
+}
+    .buttonSlider:hover {
+        background: white;
+        color: #373737;
+        border-radius: 10px;
+        cursor: pointer;
+ }
+ #btnPrev {
+padding-left: 20px;
+padding-right: 20px;
+margin-right: 100px;
+ }
+ #btnNext {
+    margin-left: 100px;
+     }
 
 
                 /*Левая часть сайта*/
@@ -139,7 +162,7 @@ a:active {
     border: 2px solid #bfbfbd;
     margin: 15px;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
     line-height: 40px;
     font-size: 16px;
@@ -147,9 +170,9 @@ a:active {
     Font-weight: bolder;
 }
     #nav li:hover {
-    background: white;
-    border-radius: 10px;
-    cursor: pointer;
+        background: white;
+        border-radius: 10px;
+        cursor: pointer;
  }
 .lap-icon1 {
     height: 30px;
