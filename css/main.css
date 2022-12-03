@@ -102,6 +102,9 @@ a:active {
     background: #373737;
     color: #bfbfbd;
 }
+#main.wiser {
+    padding-left: 150px;
+}
     /*Слайдер*/
 .slider {
     margin-left: auto;

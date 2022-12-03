@@ -54,6 +54,7 @@ function registerForm(el) {
 /*Функция скрытия-открытия меню по кнопке*/
 function openMenu() {
     document.getElementById('sidebar').classList.toggle('hidden');
+    document.getElementById('main').classList.toggle('wiser');
 }
 
 /*Слайдер для иконки в верхнем углу*/
