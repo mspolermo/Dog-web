@@ -105,6 +105,17 @@ a:active {
 #main.wiser {
     padding-left: 150px;
 }
+    /*Поля для форм*/
+    .enterField {
+        background: #bfbfbd;
+        color: #373737;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    #submitButtomReg {
+        margin-top: 20px;   
+    }
+
     /*Слайдер*/
 .slider {
     margin-left: auto;

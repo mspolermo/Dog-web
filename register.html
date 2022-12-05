@@ -49,33 +49,27 @@
         <h1>Регистрация</h1>
         </br>
         <p>Заполни эту форму чтобы стать моим другом! Гав!</p>
-        </br>
         <form onsubmit="return registerForm(this)" method="post">
             <label for="user_name">Как тебя зовут?</label>
-            <input name="user_name" type="text" />
-            </br>
+            <input class="enterField" name="user_name" type="text" />
             </br>
             <label for="email">Введи твой почтовый адрес:</label>
-            <input name="email" type="email" />
-            </br>
+            <input class="enterField" name="email" type="email" />
             </br>
             <span>Твой пол:</span>
-            <input name="pol" type="radio" id="male" value="Мужской" />
+            <input class="enterField" name="pol" type="radio" id="male" value="Мужской" />
             <label for="male">Мужской</label>
             <input name="pol" type="radio" id="female" value="Женский" />
             <label for="female">Женский</label>
             </br>
-            </br>
             <label for="user_pass">Придумай пароль:</label>
-            <input name="user_pass" type="password" />
-            </br>
+            <input class="enterField" name="user_pass" type="password" />
             </br>
             <label for="user_repass">Повтори пароль:</label>
-            <input name="user_repass" type="password" />
-            </br>
+            <input class="enterField" name="user_repass" type="password" />
             </br>
             <span id="error"></span>
-            <input name="submitButton" class="buttonSlider" type="submit" value="Подтвердить" />
+            <input id="submitButtomReg" name="submitButton" class="buttonSlider" type="submit" value="Подтвердить" />
 
         </form>
     </div>
