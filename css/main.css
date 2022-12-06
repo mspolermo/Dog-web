@@ -103,7 +103,8 @@ a:active {
     color: #bfbfbd;
 }
 #main.wiser {
-    padding-left: 150px;
+    padding-left: 100px;
+    width: 85%;
 }
     /*Поля для форм*/
     .enterField {
