@@ -1,13 +1,27 @@
-﻿/*Алерт при открытии страницы NEXT*/
-var data = confirm("Нажми ОК");
-if (data) {
-    alert("Гаф!");
-} else {
-    alert("Ррр-рррр-рррр!!!!");
-}
+﻿document.querySelector('#play').onclick = play;
+document.querySelector('#pause').onclick = pause;
+document.querySelector('#stop').onclick = stop;
+document.querySelector('#speed-up').onclick = speedUp;
+document.querySelector('#speed-down').onclick = speedDown;
+document.querySelector('#speed-normal').onclick = speedNormal;
+document.querySelector('#volume').onclick = videoVolume;
 
-/*По очереди выводим в консоль что в next.html забито в тегах span*/
-var abc = document.getElementsByTagName('span');
-for (var i = 0; i < abc.length; i++) {
-    console.log(abc[i].innerHTML);
-}
+let video;
+let display;
+
+video = document.querySelector('#video-player');
+
+function play() {
+    video.play();
+};
+function pause() {
+    video.pause();
+};
+function stop() {
+    video.pause();
+    video.currentTime = 0;
+};
+function speedUp() {};
+function speedDown() {};
+function speedNormal() {};
+function videoVolume() {};
