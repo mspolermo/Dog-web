@@ -47,25 +47,23 @@
     <!--Центральная часть сайта(справа)-->
     <div id="main">
         <h2>Хм...</h2>
-        </br>
-        <progress></progress>
-        </br>
-        </br>
-        <p>Нужно решить что дальше</p>
-        <span id="lolkek">Решаем....</span>
-        <span>Решаем.......</span>
-        <span>Решаем задачу........</span>
          </br>
         <video width="400" height="300" id="video-player">
         <source src="video/lochi.mp4" type="video/mp4">
         </video>
+        <div>
+            <progress id="progress" max="100" value="0"></progress>
+        </div>
+        <div>
+            <p id="out">00:00</p>
+        </div>
         <div><button id="play">Play</button></div>
         <div><button id="pause">Pause</button></div>
         <div><button id="stop">Stop</button></div>
         <div><button id="speed-up">Quckly</button></div>
         <div><button id="speed-down">Slowly</button></div>
         <div><button id="speed-normal">Normal</button></div>
-        <div><input type="range" id="volume">Sound</div>
+        <div><input type="range" id="volume" min=0 max=100>Sound</div>
     </div>
 
     <!--Футер-->
