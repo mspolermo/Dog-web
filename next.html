@@ -6,6 +6,7 @@
     <meta name="description" content="Простой сайт про собаку по имени Лоч">
     <meta name="keywords" content="Лоч, пес">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/next.css" />
     <title>Пес Лоч</title>
 </head>
 <body>
@@ -48,22 +49,27 @@
     <div id="main">
         <h2>Хм...</h2>
          </br>
-        <video width="400" height="300" id="video-player">
+         <div id="videoDiv">
+        <video id="video-player">
         <source src="video/lochi.mp4" type="video/mp4">
         </video>
+        <div><button class="videoButton" id="play">Play</button></div>
+        <div><button class="videoButton" id="pause">Pause</button></div>
+        <div><button class="videoButton" id="stop">Stop</button></div>
+        <div><button class="videoButton" id="speed-up">Quckly</button></div>
+        <div><button class="videoButton" id="speed-normal">Normal</button></div>
+        <div><button class="videoButton" id="speed-down">Slowly</button></div>
+        <div>
+            <input name="volume_level" type="range" id="volume" min=0 max=100>
+        </div>
         <div>
             <progress id="progress" max="100" value="0"></progress>
         </div>
         <div>
-            <p id="out">00:00</p>
+            <p id="out">00:0 sec</p>
         </div>
-        <div><button id="play">Play</button></div>
-        <div><button id="pause">Pause</button></div>
-        <div><button id="stop">Stop</button></div>
-        <div><button id="speed-up">Quckly</button></div>
-        <div><button id="speed-down">Slowly</button></div>
-        <div><button id="speed-normal">Normal</button></div>
-        <div><input type="range" id="volume" min=0 max=100>Sound</div>
+        </div>
+    </div>
     </div>
 
     <!--Футер-->
@@ -90,6 +96,6 @@
 
     <script src="js/popup.js"></script>
     <script src="js/general.js"></script>
-    <script src="js/gav.js"></script>
+    <script src="js/videoplayer.js"></script>
 </body>
 </html>

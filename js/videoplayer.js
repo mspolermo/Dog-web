@@ -46,7 +46,7 @@ function progressUpdate () {
     let d = video.duration;
     let c = video.currentTime;
     progress.value = (100 * c) / d;
-    vremya = "00:"+Math.round(video.currentTime)+" сек";
+    vremya = "00:"+Math.round(video.currentTime)+" sec";
     document.querySelector('#out').innerHTML = vremya;
 };
 
