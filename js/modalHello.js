@@ -4,7 +4,7 @@ const closeModalWindow = document.getElementById('ModalClose');
 const modalWindow = document.getElementById('modalWindow');
 setTimeout (function (openingModalWindow) {
     modalWindow.classList.remove('hiddenModal'); 
-}, 7000);
+}, 10000);
 setTimeout (function (autoClosingModalWindow) {
     modalWindow.classList.add('hiddenModal'); 
 }, 20000);

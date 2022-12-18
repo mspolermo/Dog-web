@@ -74,7 +74,16 @@
 
     <!--Футер-->
     <div id="footer">
-        <address>Екатиринбург, Урал</address>
+        <address>Екатеринбург, Урал</address>
+    </div>
+
+    <!--Всплывающее окно-->
+    <div id="modalWindow" class="hiddenModal">
+        <div><img id="modalImg" src="css/images/modal.png" ></div>
+        <div id="modalQuestion">Гав! Мы уже знакомы?</div>
+        <div class="modalClose" id="ModalClose">&#10006</div>
+        <div id="modalLogin" onclick="registrationAlert()">Конечно!</div>
+        <div id="modalRegister" onclick="reDirectToRegister()">Познакомимся</div>
     </div>
 
     <!-- Поп-ап контейнер-->
@@ -94,8 +103,8 @@
         </div>
     </div>
 
-    <script src="js/popup.js"></script>
     <script src="js/general.js"></script>
-    <script src="js/slider1.js"></script>
+    <script src="js/modalHello.js"></script>
+    <script src="js/photoSlider.js"></script>
 </body>
 </html>
