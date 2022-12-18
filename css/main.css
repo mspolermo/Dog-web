@@ -211,6 +211,75 @@ margin-right: 100px;
     border-top: 2px solid #bfbfbd;
     float: left;
 }
+                /*Модальное окно*/
+#modalImg {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+#ModalClose {
+    cursor: pointer;
+}
+
+#modalWindow {
+position:fixed;
+width: 300px;
+height: 100px;
+color: #373737;
+background-color: #bfbfbd;;
+right: 0px;
+bottom: 0px;
+border-radius: 10px;
+}
+    #modalWindow.hiddenModal {
+display: none;
+}
+
+#modalQuestion {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+}
+#modalLogin {
+    border: 2px solid #373737;
+    margin-left: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 8px;
+    position:absolute;
+    width: 120px;
+}
+#modalLogin:hover {
+    background: white;
+    color: #373737;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#modalRegister {
+    border: 2px solid #373737;
+    margin-right: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 8px;
+    position:absolute;
+    right: 0px;
+    width: 120px;
+}
+#modalRegister:hover {
+    background: white;
+    color: #373737;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#ModalClose {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
 
                 /*Поп-ап*/
 .pop_up /*Создаем затемнение*/ {
